@@ -3,7 +3,7 @@ import hogs from '../porkers_data';
 
 
 
-export default class HogBack extends Component {
+export default class Hog extends Component {
 
     render() {
         const pigPic = require("../hog_imgs/" + this.props.hog.name.toLowerCase().split(" ").join("_") + ".jpg")
@@ -13,7 +13,7 @@ export default class HogBack extends Component {
             <div className="ui move reveal" id={this.props.hog.id}>
                 
                 <div className="visible content">
-                   <img src={pigPic} />
+                   <img src={pigPic} alt="silly hog"/>
     
                 </div>
 
